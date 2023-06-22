@@ -1,0 +1,524 @@
+/* Fuente Personalizada, Descargada de la web DaFont.com */
+
+@font-face { 
+
+  font-family: 'test_services';
+  src: url('fonts/8-bit Arcade Out.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'titles';
+  src: url('fonts/DePixelBreit.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mario';
+  src: url('fonts/Retro\ Gaming.ttf') format('truetype');
+}
+
+/* Con esto personalizamos el scrollbar, osea la barrita con la que se baja en las webs, aún falta mejorar*/
+
+::-webkit-scrollbar   {
+    width: 4px;
+    height: 2px;
+    color: black;
+    
+}
+::-webkit-scrollbar-thumb {
+    background-color:dodgerblue;
+    border-radius: 3px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.521);
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: rgba(0, 0, 0, 0.747);
+
+}
+::-webkit-scrollbar-track {
+    background-color:rgb(255, 255, 255);
+    border-radius: 3px;
+}
+::-webkit-scrollbar-track:hover,
+::-webkit-scrollbar-track:active {
+    background-color: rgba(255, 255, 255, 0.747);
+    height: 5px;
+    width: 5px;
+  }
+
+
+/* Estos son los estilos generales que recibe la web en todos los elementos*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+
+}
+
+body {
+
+  background-image: url(./img/right-bg-decor.png);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.texto-bvn {
+
+
+  font-family: mario;
+  font-size: 25px;
+  vertical-align: middle;
+
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  width: 100%;
+  height: auto;}
+
+
+/* Pre-loader, Esto no lo hice yo, fue sacado de algunos tutos y Stack*OF */
+
+
+
+/*Lo quite pq me quedo re mal :( */
+
+
+
+
+
+.img {
+  background-repeat: no-repeat;
+
+
+  width: auto;
+  height: 1000px;
+  
+}
+
+
+.texto-bvn h2{
+
+  font-size: 26px;
+}
+
+
+/* Este el mensaje que rebota de lado a lado */
+
+  .mensaje{
+    color:purple;
+    box-shadow: 3px black;
+    border-radius: 10px;
+    font-family: titles;
+    font-size: 14px;
+
+  }
+  .mensaje a{
+    align-content: flex-end;
+    text-decoration: none;
+
+  }
+  
+  
+  .p-h {
+    background-color: rgba(255, 255, 255, 0.726);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1.3rem black;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+  }
+  .logo {
+    color: rgb(104, 104, 104);
+    align-self: center;
+    margin-left: 1.2rem;
+    font-size: 2.3rem;
+    font-family:  test_services;
+  }
+  
+  .nav-bar {
+    margin: auto;
+  }
+  
+  .nav-bar a {
+    color: rgb(104, 104, 104);
+    padding: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: titles;
+  }
+  .nav-bar a:hover {
+
+    text-decoration-line:line-through rgba(0, 0, 0, 0.664);
+    box-shadow: 0px 1px rgba(14, 1, 1, 0.616);
+    color: rgba(255, 72, 0, 0.514);
+}
+  
+  .menu-icon {
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #reg {
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-top: 6px;
+    display: flex;
+    font-weight: 300;
+    font-family: titles;
+
+  }
+
+  #reg:hover
+ {
+
+    background-color: rgba(255, 72, 0, 0.322);
+    box-shadow: black 2px 2px;
+    
+
+
+  }
+
+  /* Meep el gatito volador, en la carpeta img quedo*/
+
+  @keyframes animatedBackground {
+		from { background-position: 2 0; }
+		to { background-position: 10% 0; }
+	}
+	@-webkit-keyframes animatedBackground {
+		from { background-position: 0 0; }
+		to { background-position: 30% 0; }
+	}
+	@-ms-keyframes animatedBackground {
+		from { background-position: 0 0; }
+		to { background-position: 70% 0; }
+	}
+	@-moz-keyframes animatedBackground {
+		from { background-position: 0 0; }
+		to { background-position: 100% 5; }
+	}
+	.meep	{ 
+		width: 2500px; 
+		height: 400px;
+    margin-left: -300px;
+    margin-top: 80px; 
+		background-image: url(img/Meep.png);
+		background-position: relative ;
+		background-repeat: repeat-x;
+		animation: animatedBackground 25s linear infinite;
+		-ms-animation: animatedBackground 25s linear infinite;
+		-moz-animation: animatedBackground 25s linear infinite;
+		-webkit-animation: animatedBackground 25s linear infinite;
+	}
+
+
+  .h-r {
+    align-items: flex-end;
+    display: block;
+  }
+  .h-r a {
+    text-decoration: none;
+
+
+  }
+
+/* Esto es para el fondo repetido y hacer un estilo de doble pero no me funciono bien */
+
+  .segmenter {
+	width: 100%;
+	height: 142vh;
+	position: auto;
+	overflow: hidden;
+
+  
+  }
+
+
+
+
+
+/* Estos son los estilos que recibe la caja primaria sobre la cual estan los formularios */
+main {
+  width: 100%;
+  padding: 30px;
+  margin : auto;
+  margin-top: 70px;
+}
+
+/* Este y los siguientes hasta 'btn_sesion', son parte de la caja trasera de los forms */
+
+.contenedor_principal {
+
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+
+}
+
+.caja_trasera {
+
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(13px) ;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.caja_trasera div {
+
+  margin: 90px 40px;
+  color: rgb(255, 255, 255);
+  transition: all 450ms;
+
+
+}
+
+.caja_trasera div p,
+.caja_trasera div button {
+
+  margin-top: 12px;
+  font-family: Mario;
+  color: rgb(231, 232, 233);
+
+  
+
+
+}
+
+.caja_trasera h3 {
+
+  font-weight: 100;
+  font-family: titles;
+  font-size: 24px;
+}
+
+#btn_sesion {
+
+  font-family: titles;
+  font-size: 15px;
+  color: black;
+  padding: 10px 20px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 210ms;
+
+}
+
+#btn_sesion:hover {
+
+  background: #fff;
+  color: rgba(101, 219, 240, 0.849);
+}
+
+#btn_registro {
+
+  font-family: titles;
+  font-size: 15px;
+  color: black;
+  padding: 10px 20px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 210ms;
+
+}
+
+#btn_registro:hover {
+
+  background: #fff;
+  color: rgba(101, 219, 240, 0.849);
+}
+
+
+
+/* Estilos de los Formularios */
+
+.contenedor_login_registro {
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 390px;
+  position: relative;
+  top: -200px;
+  left: 12px;
+
+  transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 0.275);
+}
+
+.contenedor_login_registro form{
+
+  width: 100%;
+  padding: 35px 30px;
+  background: #ffffffe3;
+  position: absolute;
+  border-radius: 20px;
+}
+
+.contenedor_login_registro form h2 {
+
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 22px;
+  font-family: titles;
+
+
+}
+
+.contenedor_login_registro form input {
+
+  border-radius: 5px;
+  background: #f2f2f2f2;
+  transition: all 0.16s cubic-bezier(0.68,-0.55,0.265,1.55);
+  margin: 8px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+
+}
+input::placeholder{
+
+  font-family: titles;
+  font-size: 12px;
+
+}
+
+.contenedor_login_registro form button {
+
+  font-family: titles;
+  font-size: 15px;
+  color: black;
+  margin-top: 22px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 210ms;
+  padding: 10px 12px;
+
+}
+
+.contenedor_login_registro form button:hover {
+
+    background: #fff;
+    color: rgba(101, 219, 240, 0.849);
+  
+  
+}
+
+
+.formulario_login {
+
+  opacity: 1;
+  display: block;
+}
+
+.formulario_registro {
+
+  display: none;
+}
+
+
+footer {
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+
+  background-image: url(./img/footer.png);
+  width: 100%;
+  bottom: 0;
+  top: 100vh;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+
+
+
+
+
+
+/* Estos son los media query con los que hacemos "responsive" el nav (se intenta), solo va bien en la pagina principal '/', en la
+otra hay muchos elementos y me da cringe acomodar todo bien*/
+  @media screen and (max-width: 750px) {
+    
+    .main{
+
+    margin-top: 60px;
+    display: flex;
+    
+  }
+
+    .caja_trasera {
+
+      max-width: 340px;
+      height: 320px;
+      flex-direction: column;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    .caja_trasera div {
+
+      margin: 0px;
+      position: absolute;
+
+    }
+
+    .nav-bar {
+      display: none;
+      position: absolute;
+      top: 3.7rem;
+      left: 0;
+      width: 100%;
+      background-color: #f2f2f2f2;
+      text-align: center;
+    }
+  
+  
+  
+    .h-r {
+      padding: 0.4rem;
+      display: block;
+      font-size: 12px;
+    }
+
+
+    /* Formularios flex responsive, bueno eso quisiera yo */
+
+
+  
+  .contenedor_login_registro {
+
+    top: -45px;
+    left: -10px;
+    margin: auto;
+  }
+
+  .contenedor_login_registro form {
+
+    position: relative;
+
+  }
+  }
+
+
+
+  /* U̶̩͎̗͉͖̒̋̏̌͠n̴͚͓̮̦͉̺̪̿̐̒̅͐̽d̶̹̼̘̦͖̊̍̆e̴̘͖̓̿͐̐͂̀̿̆͝r̶̯͙̮̄̅̅̓́̚̕M̵͙̎̑̈́̄̄̂̅͝ḭ̷̢̲̔̑͌̈́͘͝͠n̵̺̲̮̞̑͒̒͐̅͋͌̕̚ḑ̵̻̿̔͋̍̐͊̅̚ ̴̛̹̫͚̯̐̓̒͆̾͐͐̊W̴͔͚̙̆͛̾̚ạ̵̙́s̶̡̛̳̹̩̺̘͇̳͖͊̋̀̋͋͑͠ ̴̦̻͖̝͈̼̭̙͙̀̈́͒̀̈́͆͝H̷̘̥̝̝̼̻̫̞̹̞̋͛̀ȇ̴̡̲̬̭͓̼̅͊̄̐̐̊͝r̸̛̗͍̭̮̬͙͑ȩ̸͔̝̱̮̠͚̋́̈̈́͗͌̚!̶͔̳̻̭͕͛͂̓͌̋͋̽͌͛̚    𝐔𝐧𝐝𝐞𝐫𝐌𝐢𝐧𝐝 𝐖𝐚𝐬 𝐇𝐞𝐫𝐞! U̶̩͎̗͉͖̒̋̏̌͠n̴͚͓̮̦͉̺̪̿̐̒̅͐̽d̶̹̼̘̦͖̊̍̆e̴̘͖̓̿͐̐͂̀̿̆͝r̶̯͙̮̄̅̅̓́̚̕M̵͙̎̑̈́̄̄̂̅͝ḭ̷̢̲̔̑͌̈́͘͝͠n̵̺̲̮̞̑͒̒͐̅͋͌̕̚ḑ̵̻̿̔͋̍̐͊̅̚ ̴̛̹̫͚̯̐̓̒͆̾͐͐̊W̴͔͚̙̆͛̾̚ạ̵̙́s̶̡̛̳̹̩̺̘͇̳͖͊̋̀̋͋͑͠ ̴̦̻͖̝͈̼̭̙͙̀̈́͒̀̈́͆͝H̷̘̥̝̝̼̻̫̞̹̞̋͛̀ȇ̴̡̲̬̭͓̼̅͊̄̐̐̊͝r̸̛̗͍̭̮̬͙͑ȩ̸͔̝̱̮̠͚̋́̈̈́͗͌̚!̶͔̳̻̭͕͛͂̓͌̋͋̽͌͛̚   */
